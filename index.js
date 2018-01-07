@@ -1,7 +1,6 @@
 /**
- * A toolkit for creating differential update files for
- * adblockers, with some extra features designed for
- * Nano Adblocker.
+ * A toolkit for creating differential update files for adblockers, with some
+ * extra features designed for Nano Adblocker.
  */
 "use strict";
 
@@ -32,8 +31,8 @@ const path = require("path");
  * @param {string} [output=autodetect] - The path to the output folder,
  ** defaults to filter file name without extension plus "-diff".
  ** For example, "filter.txt" will become "filter-diff".
- * @param {string} [config="nano-sync-data"] - The path to the config
- ** and cache folder. You should commit only "config.json" in that folder.
+ * @param {string} [config="nano-sync-data"] - The path to the config and cache
+ ** folder. You should commit only "config.json" in that folder.
  ** Hint: Add "nano-sync-data/*.txt" to ".gitignore".
  */
 exports.ezPatch = async (filter, output, config = "nano-sync-data") => {
@@ -115,8 +114,8 @@ exports.ezPatch = async (filter, output, config = "nano-sync-data") => {
         if (meta && oldf) {
             // Check if there are already too many patches
             if (meta.latest > meta.checkpoint + 10) {
-                // I arbitrarily chose 10, which should be around 1 week if there are
-                // 1 to 2 build per day
+                // I arbitrarily chose 10, which should be around 1 week if
+                // there are 1 to 2 build per day
                 await createCheckpoint();
             } else {
                 const newf = await fs.readFile(filter, "utf8");

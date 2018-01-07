@@ -13,8 +13,8 @@
 const nsync = require("./index.js");
 
 (async () => {
+    // Parse options
     let filter, output, config;
-
     let lastFlag;
     for (let arg of process.argv) {
         if (!filter) {
@@ -48,10 +48,21 @@ const nsync = require("./index.js");
         }
         lastFlag = undefined;
     }
+    if (!filter) {
+        console.error("Missing filter file");
+        process.exit(1);
+    }
 
-    if (config) {
-        await nsync.ezPatch(filter, output, config);
-    } else {
-        await nsync.ezPatch(filter, output);
+    // Create patch
+    try {
+        if (config) {
+            await nsync.ezPatch(filter, output, config);
+        } else {
+            await nsync.ezPatch(filter, output);
+        }
+    } catch (err) {
+        console.error("Something went wrong...");
+        console.error(err);
+        process.exit(1);
     }
 })();
