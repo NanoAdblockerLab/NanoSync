@@ -8,7 +8,7 @@
     "diff": "~3.4.0",
     "mkdirp": "~0.5.1"
   },
-  "description": "Continuous filter updates delivery.",
+  "description": "Continuous filter update delivery.",
   "engines": {
     "node": ">=8.0.0"
   },
