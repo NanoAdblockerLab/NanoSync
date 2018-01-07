@@ -1,4 +1,4 @@
-# Nano Sync
+# Nano Sync [![Dependencies](https://david-dm.org/NanoAdblocker/NanoSync.svg)](https://david-dm.org/NanoAdblocker/NanoSync)
 
 Continuous filter update delivery
 
@@ -51,8 +51,8 @@ filter-diff/
 The structure of `meta.json`:
 ```JSON
 {
-  checkpoint: 35,
-  latest: 37
+  "checkpoint": 35,
+  "latest": 37
 }
 ```
 
