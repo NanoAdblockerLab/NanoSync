@@ -27,7 +27,7 @@ nsync.ezPatch("filter.txt");
 You need to commit `./nano-sync-data/config.json`, although not other cache
 files in that directory, you should add the following line to `.gitignore`
 file:
-```
+```Text
 nano-sync-data/*.txt
 ```
 
@@ -37,7 +37,7 @@ to two patches per day.
 ## Technical
 
 Nano Sync will, by default, generate the following output structure:
-```
+```Text
 filter.txt
 filter-diff/
     meta.json
