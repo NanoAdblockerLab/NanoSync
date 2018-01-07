@@ -1,5 +1,7 @@
 # Nano Sync [![Dependencies](https://david-dm.org/NanoAdblocker/NanoSync.svg)](https://david-dm.org/NanoAdblocker/NanoSync)
 
+[![NPM](https://nodei.co/npm/nano-sync.png)](https://nodei.co/npm/nano-sync/)
+
 Continuous filter update delivery
 
 A (prototype) file based differential update engine for filter lists.
