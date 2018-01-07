@@ -50,8 +50,8 @@ const nsync = require("./index.js");
     }
 
     if (config) {
-        await nsync(filter, output, config);
+        await nsync.ezPatch(filter, output, config);
     } else {
-        await nsync(filter, output);
+        await nsync.ezPatch(filter, output);
     }
 })();
