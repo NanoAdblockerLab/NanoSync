@@ -1,0 +1,21 @@
+{
+  "author": "jspenguin2017",
+  "bin": "cli.js",
+  "bugs": {
+    "url": "https://github.com/NanoAdblocker/NanoSync/issues"
+  },
+  "dependencies": {
+    "diff": "~3.4.0",
+    "mkdirp": "~0.5.1"
+  },
+  "description": "Continuous filter updates delivery.",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "homepage": "https://github.com/NanoAdblocker/NanoSync",
+  "license": "GPL-3.0",
+  "main": "index.js",
+  "name": "nano-sync",
+  "repository": "https://github.com/NanoAdblocker/NanoSync",
+  "version": "0.0.1"
+}
