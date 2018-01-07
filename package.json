@@ -17,5 +17,5 @@
   "main": "index.js",
   "name": "nano-sync",
   "repository": "https://github.com/NanoAdblocker/NanoSync",
-  "version": "0.0.2"
+  "version": "0.0.3"
 }
