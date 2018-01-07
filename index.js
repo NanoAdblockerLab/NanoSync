@@ -32,11 +32,11 @@ const path = require("path");
  * @param {string} [output=autodetect] - The path to the output folder,
  ** defaults to filter file name without extension plus "-diff".
  ** For example, "filter.txt" will become "filter-diff".
- * @param {string} [config="nano-sync-config"] - The path to the config
+ * @param {string} [config="nano-sync-data"] - The path to the config
  ** and cache folder. You should commit only "config.json" in that folder.
- ** Hint: Add "nano-sync-config/*.txt" to ".gitignore".
+ ** Hint: Add "nano-sync-data/*.txt" to ".gitignore".
  */
-exports.ezPatch = async (filter, output, config = "nano-sync-config") => {
+exports.ezPatch = async (filter, output, config = "nano-sync-data") => {
     // Process arguments
     assert(filter && typeof filter === "string");
     if (typeof output === "undefined") {
