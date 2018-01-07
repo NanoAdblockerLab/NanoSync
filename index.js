@@ -82,7 +82,7 @@ exports.ezPatch = async (filter, output, config = "nano-sync-data") => {
             checkpoint: filterConfig.lastVersion,
             latest: filterConfig.lastVersion,
         };
-        await fs.writeFile(path.resolve(output, "meta.json"), JSON.stringify(meta), "utf8");
+        await fs.writeFile(path.resolve(output, "meta.json"), JSON.stringify(meta, null, 2), "utf8");
 
         await fs.copyFile(filter, path.resolve(config, filterConfig.lastFile));
     };
@@ -130,7 +130,7 @@ exports.ezPatch = async (filter, output, config = "nano-sync-data") => {
                     path.resolve(output, (meta.latest - meta.checkpoint).toString() + ".patch"),
                     patch, "utf8"
                 );
-                await fs.writeFile(path.resolve(output, "meta.json"), JSON.stringify(meta), "utf8");
+                await fs.writeFile(path.resolve(output, "meta.json"), JSON.stringify(meta, null, 2), "utf8");
 
                 await fs.writeFile(path.resolve(config, filterConfig.lastFile), newf, "utf8");
             }
@@ -138,5 +138,5 @@ exports.ezPatch = async (filter, output, config = "nano-sync-data") => {
     }
 
     // Store main configuration data
-    await fs.writeFile(path.resolve(config, "config.json"), JSON.stringify(mainConfig), "utf8");
+    await fs.writeFile(path.resolve(config, "config.json"), JSON.stringify(mainConfig, null, 2), "utf8");
 };
