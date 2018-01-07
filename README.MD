@@ -62,7 +62,7 @@ version.
 In the above example, `1.patch` then `2.patch` need to be applied to
 `checkpoint.txt` to get the latest filter.
 
-`3.patch` and `4.patch` are leftover patch file from last round.
+`3.patch` and `4.patch` are leftover patch files from last round.
 
 This default mode is optimized for Git repository, you will get a spike in
 traffic on every checkpoint, but in return, generates the least amount of extra
