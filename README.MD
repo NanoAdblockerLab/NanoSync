@@ -13,7 +13,7 @@ npm install -g nano-sync
 
 Command Line
 ```Bash
-nano-sync /path/to/filter.txt [-o /path/to/output/directory/] [-c /path/to/config/directory/]
+nano-sync /path/to/filter.txt
 ```
 
 Integration
