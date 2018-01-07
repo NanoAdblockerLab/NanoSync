@@ -4,7 +4,7 @@
 
 Continuous filter update delivery
 
-A (prototype) file based differential update engine for filter lists.
+A (prototype) file based differential update system for filter lists.
 
 ## Usage
 
@@ -62,7 +62,7 @@ The structure of `meta.json`:
 version.
 
 In the above example, `1.patch` then `2.patch` need to be applied to
-`checkpoint.txt` to get the latest filter.
+`checkpoint.txt` to generate the latest filter.
 
 `3.patch` and `4.patch` are leftover patch files from last round.
 
