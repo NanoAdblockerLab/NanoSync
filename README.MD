@@ -4,7 +4,7 @@
 
 Continuous filter update delivery
 
-A (prototype) file based differential update system for filter lists.
+A file based differential update system for filter lists.
 
 **WORK IN PROGRESS - DEVELOPERS ONLY**
 
