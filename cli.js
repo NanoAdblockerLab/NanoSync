@@ -16,7 +16,8 @@ const nsync = require("./index.js");
     // Parse options
     let filter, output, config;
     let lastFlag;
-    for (let arg of process.argv) {
+    let args = process.argv.slice(2);
+    for (let arg of args) {
         if (!filter) {
             filter = arg;
             continue;
