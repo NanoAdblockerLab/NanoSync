@@ -25,6 +25,12 @@ const fs = (() => {
 const path = require("path");
 
 /**
+ * The minimum version of the protocol that the client must support.
+ * @const {integer}
+ */
+const PROTOCOL_MIN_VERSION = 1;
+
+/**
  * Create or update a differential update database with one call.
  * @async @function
  * @param {string} filter - The path to the filter file.
@@ -79,6 +85,7 @@ exports.ezPatch = async (filter, output, config = "nano-sync-data") => {
 
         await fs.copyFile(filter, path.resolve(output, "checkpoint.txt"));
         const meta = {
+            protocol_min_version: PROTOCOL_MIN_VERSION,
             checkpoint: filterConfig.lastVersion,
             latest: filterConfig.lastVersion,
         };
@@ -124,6 +131,7 @@ exports.ezPatch = async (filter, output, config = "nano-sync-data") => {
                 // TODO: What if no change? What if change too large?
 
                 meta.latest++;
+                meta.protocol_min_version = PROTOCOL_MIN_VERSION;
                 filterConfig.lastVersion = meta.latest;
 
                 await fs.writeFile(
