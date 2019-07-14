@@ -5,12 +5,12 @@
     "url": "https://github.com/NanoAdblocker/NanoSync/issues"
   },
   "dependencies": {
-    "diff": "^4.0.0",
-    "mkdirp": "^0.5.1"
+    "diff": "4.0.1",
+    "mkdirp": "0.5.1"
   },
   "description": "Continuous filter update delivery.",
   "engines": {
-    "node": "^10.16.0"
+    "node": "10.16.0"
   },
   "homepage": "https://github.com/NanoAdblocker/NanoSync",
   "license": "GPL-3.0",
