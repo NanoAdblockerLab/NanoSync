@@ -5,7 +5,7 @@
     "url": "https://github.com/NanoAdblocker/NanoSync/issues"
   },
   "dependencies": {
-    "diff": "~3.4.0",
+    "diff": "~3.5.0",
     "mkdirp": "~0.5.1"
   },
   "description": "Continuous filter update delivery.",
