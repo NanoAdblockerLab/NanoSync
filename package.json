@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "diff": "4.0.2",
-    "mkdirp": "0.5.1"
+    "mkdirp": "1.0.0"
   },
   "description": "Continuous filter update delivery.",
   "engines": {
